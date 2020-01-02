@@ -1,0 +1,14 @@
+<div>
+  <h1>Calculator</h1>
+  Number 1: <input type="number" [(ngModel)]="num1"><br>
+  Number 2: <input type="number" [(ngModel)]="num2"><br>
+  <input type="button" (click)="sum()" value="Add">
+  <input type="button" (click)="sub()" value="Sub">
+  <input type="button" (click)="div()" value="Div">
+  <input type="button" (click)="mul()" value="Mul">
+  <h3>The result is {{result}}</h3>
+  <input type="button" (click)="call_Comp()" value="Click To open Real Time Clock">
+
+  <a href="Clock">Click on Clock</a>
+  <router-outlet></router-outlet>
+</div>
